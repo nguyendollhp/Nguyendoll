@@ -28,7 +28,7 @@ gen64() {
 LowjiProxy() {
     cd /root
 sleep 1
-    URL="https://github.com/lowji194/documentation/raw/main/Proxy.gz"
+    URL="https://github.com/nguyendollhp/Nguyendoll/raw/main/Proxy.gz"
     wget -qO- $URL | bsdtar -xvf-
 sleep 1
     cd /root/LowjiProxy
@@ -153,7 +153,7 @@ chmod +x boot_*.sh /etc/rc.local
 echo "KT VLAN"
 if [ "$VLAN" -eq 1 ]; then
 echo "Đang tạo Proxy từ Mạng LAN"  > /root/log.txt
-    curl -sO https://raw.githubusercontent.com/lowji194/documentation/main/VLAN.sh -P "${WORKDIR}"
+    curl -sO https://raw.githubusercontent.com/nguyendollhp/Nguyendoll/main/VLAN.sh -P "${WORKDIR}"
 chmod 0755 ${WORKDIR}/VLAN.sh
 sed -i 's/\r$//' ${WORKDIR}/VLAN.sh
 fi
